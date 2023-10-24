@@ -1,23 +1,8 @@
-//  TODO: Include packages needed for this application
-
-//  TODO: Create an array of questions for user input
-// const questions = [];
-
-//  TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
-//  TODO: Create a function to initialize app
-// function init() {}
-
-//  Function call to initialize app
-// init();
-
-
 const inquirer = require('inquirer');
 const fs = require('fs');
-const printHTML =  ({title, description , installation , usage, license, contributing, test, ghUsername, questions}) => fs.writeFile('index.html',`# ${title}
+const printReadMe =  ({title, description , installation , usage, license, contributing, test, ghUsername, questions}) => fs.writeFile('./generatedReadME/README.md',`# ${title}
 
-![license](https://img.shields.io/badge/${license})
+
 
 
 ## Description
@@ -41,8 +26,7 @@ ${installation}
 ${usage}
 
 ## License
-
-this project was created with the ${license} license.
+This project was created with the ${license} license.
 
 ## How to Contribute
 
@@ -52,7 +36,7 @@ ${contributing}
 
 ${test}
 
-##Questions
+## Questions
 
 ${questions}
 [${ghUsername}](https://github.com/${ghUsername})
@@ -75,27 +59,27 @@ inquirer
     },
     {
       type: 'input',
-      message: 'Can you write a description for your project?',
+      message: 'Write a description for your project.',
       name: 'description',
     },
     {
       type: 'input',
-      message: 'Can you write installation ins',
+      message: 'Write installation instructions.',
       name: 'installation',
     },
     {
       type: 'input',
-      message: 'What is your linkedin url?',
+      message: 'How is the project used?',
       name: 'usage',
     },
     {
       type: 'input',
-      message: 'What is your github url?',
+      message: 'What are the rules for contributing to the repo?',
       name: 'contributing',
     },
     {
       type: 'input',
-      message: 'What is your github url?',
+      message: 'How can the project be tested?',
       name: 'test',
     },
     {
@@ -119,20 +103,18 @@ inquirer
       "Microsoft Public License",
       "GNU Lesser General Public License v2.0 or later",
       "SIL Open Font License 1.1",
-      "zlib License",] ,
+      "zlib License"] ,
       name: 'license',
     },
     {
       type: 'input',
-      message: 'What is your github url?',
+      message: 'If someone has questions, what is the best way to reach you(Provide contact info)?',
       name: 'questions',
     },
     {
       type: 'input',
-      message: 'What is your github url?',
+      message: 'What is your github username?',
       name: 'ghUsername',
     },
   ])
-  .then((response) => printHTML(response));
-
-  title, description , installation , usage, license, contributing, test, ghUsername, questions
+  .then((response) => printReadMe(response));
