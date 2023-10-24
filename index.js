@@ -39,13 +39,13 @@ ${test}
 ## Questions
 
 ${questions}
+
+
 [${ghUsername}](https://github.com/${ghUsername})
 
 
-
-
 ` , (err) =>
-  err ? console.error(err) : console.log('Success!'));
+  err ? console.error(err) : console.log('Success! Your README.MD is in the generatedReadME folder.'));
 
 
 

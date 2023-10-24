@@ -1,11 +1,11 @@
-# Chris 
+# Readme-er
 
-![license](https://img.shields.io/badge/MIT License)
+
 
 
 ## Description
 
-it doesnt 
+Generate read me's in a cli aplication 
 
 ## Table of Contents (Optional)
 
@@ -14,34 +14,31 @@ If your README is long, add a table of contents to make it easy for users to fin
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contribute](#contribute)
-- [Test](#test)
-- [Questions](#questions)
-
 
 ## Installation
 
-no
+clone the repo from github
 
 ## Usage
 
-no
+by following the instructions from the command line prompts
 
 ## License
+This project was created with the MIT License license.
 
-this project was created with the MIT License license.
+## How to Contribute
 
-## Contribute
-
-no
+Please do not contribute
 
 ## Tests
 
-no
+There are currently no means of testing for this project, Sorry.
 
 ## Questions
 
-email
+Email me at fakeemail@gmail.com
+
+
 [cpicha20](https://github.com/cpicha20)
 
 
